@@ -19,7 +19,35 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's wha <br><span>I like</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tenetur perspiciatis fugiat optio accusantium tempora? In magnam laboriosam doloremque esse nisi, at sapiente, tempora quos minus, enim perferendis accusamus ratione.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgcolor(#0062be)"></li>
+            <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgcolor(#e60c2c)"></li>
+            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgcolor(#1e1e1e)"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
     </section>
-    
+    <script type="text/javascript">
+        function imgSlider (anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgcolor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color
+        }
+    </script>
 </body>
 </html>
